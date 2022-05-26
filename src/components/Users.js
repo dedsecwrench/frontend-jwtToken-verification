@@ -45,7 +45,7 @@ const Users = () => {
         // if response.data value is msg object
         // we are checking if msg.success === false 
         // then get msg object's message.
-        // and then line no.41 will execute!
+        // and then navigate("/login") will execute!
         if (response.data.success === false) {
           console.log(response.data.message);
           navigate("/login")
