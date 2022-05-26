@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React,{useRef, useState} from 'react'
+import React,{useRef} from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
@@ -20,7 +20,7 @@ const Register = () => {
       // passing the data to backend through axios post method.
       // one parameter is url
       // another is data we want to send.
-      axios.post("http://localhost:8000/login",{Obj})
+      axios.post("https://jwt-token-verification.herokuapp.com/login",{Obj})
         .then((response)=>{
           console.log("in then");
           // console.log(response.data);
