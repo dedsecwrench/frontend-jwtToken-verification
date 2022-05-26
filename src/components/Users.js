@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react'
+import React,{ useState} from 'react'
 import axios from "axios"
 import { useNavigate } from 'react-router-dom';
 
@@ -24,7 +24,7 @@ const Users = () => {
       // key "authorization"
       // value "Bearer TOKEN"
       // if you wanna pass the token to backend for verification, always use this format only!
-      axios.get("http://localhost:8000/users",{headers:{"authorization": `Bearer ${token}`}})
+      axios.get("https://jwt-token-verification.herokuapp.com/users",{headers:{"authorization": `Bearer ${token}`}})
       .then((response)=>{
         console.log("in user THEN");
 
