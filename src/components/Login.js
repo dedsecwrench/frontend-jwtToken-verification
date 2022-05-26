@@ -2,7 +2,7 @@ import axios from 'axios';
 import React,{useRef} from 'react'
 import { useNavigate } from 'react-router-dom';
 
-const Register = () => {
+const Login = () => {
   
     const navigate = useNavigate();
     const input1 = useRef();
@@ -51,4 +51,4 @@ const Register = () => {
   )
 }
 
-export default Register
+export default Login
